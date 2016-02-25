@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent" android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/currentCity"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="36sp"
+            android:text="Melbourne"
+            android:gravity="center"
+            android:layout_weight="4"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+        <TextView
+            android:id="@+id/cityCoordinates"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="-37.81,144.96"
+            android:textSize="28sp"
+            android:gravity="center"
+            android:layout_weight="4"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/C:/Users/Simon/Dropbox/University/Mobile_Development/Assignment_8/SunCalculator/app/src/main/res/layout/tab_list.xml -->

@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="12sp"
+        android:layout_width="match_parent" android:layout_height="fill_parent">
+
+
+        <!--city-->
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="30sp"
+            android:text="City:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/city"
+            android:textSize="28sp"
+            android:hint="Melbourne"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+
+        <!--latitude and longitude-->
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="30sp"
+            android:text="Latitude / Longitude:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/latitude"
+                android:hint="-37.81"
+                android:layout_marginRight="10dp"
+                android:textSize="28sp"
+                android:layout_weight="1"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/longitude"
+                android:hint="144.96"
+                android:textSize="28sp"
+                android:layout_weight="1"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <!--time zone-->
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="30sp"
+            android:text="Timezone:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/timezone"
+            android:hint="Australia/Melbourne"
+            android:textSize="28sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:text="Confirm"
+            android:textSize="22sp"
+            android:id="@+id/saveLoc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/C:/Users/Simon/Dropbox/University/Mobile_Development/Assignment_8/SunCalculator/app/src/main/res/layout/tab_form.xml -->
